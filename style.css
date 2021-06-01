@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  height: 100vh;
+
+  font-family: 'Nunito', sans-serif;
+  background-size: cover;
+  background-image: url(./Waseda.jpeg);
+  /* background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%); */
+  /* align-items: center; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  width: 40rem;
+  height: 50rem;
+  /* backdrop-filter: blur(500px); */
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  overflow: hidden;
+  /* filter: blur(); */
+  background-color: rgba(255, 255, 255, 0.7);
+  position: relative;
+}
+.title {
+  display: flex;
+  justify-content: center;
+}
+h1 {
+  font-family: inherit;
+  align-items: center;
+  text-shadow: 2px 2px #bebebe;
+  font-size: 85px;
+  line-height: 0.7;
+
+  color: #000000;
+  margin-top: 40px;
+  margin-left: 200px;
+}
+
+.container {
+  justify-content: center;
+  width: 468px;
+  margin-right: 100px;
+  display: flex;
+  margin-top: 20px;
+}
+
+.info {
+  display: flex;
+  /* justify-content: space-between; */
+  margin-bottom: 10px;
+}
+
+section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hidden {
+  display: none;
+}
+.main {
+  margin-top: 10rem;
+
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 456px;
+  height: 456px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 6px;
+
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.15);
+}
+.btn {
+  position: absolute;
+  left: 30%;
+  transform: translateX(-50%);
+  color: #444;
+  background: none;
+  border: none;
+  font-family: inherit;
+  font-size: 1rem;
+  text-transform: uppercase;
+  width: 120px;
+  cursor: pointer;
+  font-weight: 400;
+  transition: all 0.2s;
+
+  background-color: white;
+  background-color: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(10px);
+
+  padding: 0.7rem 2.5rem;
+  border-radius: 50rem;
+  box-shadow: 0 1.75rem 3.5rem rgba(0, 0, 0, 0.1);
+}
+
+.btn--new {
+  top: 14rem;
+}
+
+.btn--change {
+  top: 10rem;
+}
+
+.main div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100px;
+  height: 100px;
+  margin: 7px;
+  border-radius: 3px;
+  color: black;
+  font-size: 60px;
+  text-align: center;
+  font-weight: bold;
+  line-height: 1.6;
+}
+
+.pop-square {
+  animation: beat 0.25s alternate;
+  transform-origin: center;
+}
+
+@keyframes beat {
+  to {
+    transform: scale(1.05);
+  }
+}
+.GameOver {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  font-size: 50px;
+  font-family: inherit;
+  margin-top: 12rem;
+}
+
+.score-container {
+  margin-top: 9.5rem;
+  margin-left: 17.5rem;
+  text-align: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+}
+
+#score {
+  font-size: 30px;
+}
+
+.score-title {
+  font-size: 16px;
+}
