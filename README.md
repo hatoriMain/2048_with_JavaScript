@@ -6,4 +6,4 @@
 - https://www.youtube.com/watch?v=aDn2g8XfSMc
 - Using pokemon API.
 
-[project preview](preview.png)
+![project preview](preview.png)
